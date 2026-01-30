@@ -206,21 +206,33 @@ export default function App() {
               </div>
             </div>
 
-            <div className="border-t border-zinc-800 pt-8 text-center">
-              <p className="text-sm text-gray-400">
-                © 2026 GYM ELITE - جميع الحقوق محفوظة
-              </p>
-              <p className="text-xs text-gray-500 mt-2">
-                تحذير: استشر طبيباً قبل البدء بأي برنامج تمارين أو نظام غذائي
-              </p>
-              <div className="flex items-center justify-center gap-2 mt-4">
-                <Flame className="w-4 h-4 text-orange-500" />
-                <p className="text-sm text-orange-400 font-semibold">
-                  No Pain, No Gain 💪
-                </p>
-                <Flame className="w-4 h-4 text-orange-500" />
-              </div>
-            </div>
+           <div className="border-t border-zinc-800 pt-8 text-center">
+  <p className="text-sm text-gray-400">
+    © 2026 GYM ELITE - جميع الحقوق محفوظة
+  </p>
+
+  <p className="text-xs text-gray-500 mt-2">
+    تحذير: استشر طبيباً قبل البدء بأي برنامج تمارين أو نظام غذائي
+  </p>
+
+  <div className="flex items-center justify-center gap-2 mt-4">
+    <Flame className="w-4 h-4 text-orange-500" />
+    <p className="text-sm text-orange-400 font-semibold">
+      No Pain, No Gain 💪
+    </p>
+    <Flame className="w-4 h-4 text-orange-500" />
+  </div>
+
+  {/* Developer Credit */}
+  <div className="mt-5 text-xs text-gray-500 flex items-center justify-center gap-2">
+    <span>تم إنشاء هذا الموقع بواسطة</span>
+    <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent font-bold">
+      عمر أشرف
+    </span>
+    <span>💻🔥</span>
+  </div>
+</div>
+
           </div>
         </footer>
       </div>

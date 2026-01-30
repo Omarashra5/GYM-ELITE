@@ -121,40 +121,47 @@ export default function App() {
 
       {/* Content Sections */}
       <div className="pt-16">
+        {/* Hero Section */}
         <section ref={heroRef} id="home">
           <HeroSection scrollToSection={scrollToSection} />
         </section>
 
+        {/* Workouts Section */}
         <section ref={workoutsRef} id="workouts" className="py-16 bg-gradient-to-b from-black via-zinc-900 to-black">
           <div className="container mx-auto px-4">
             <WorkoutPlans />
           </div>
         </section>
 
+        {/* Nutrition Section */}
         <section ref={nutritionRef} id="nutrition" className="py-16 bg-gradient-to-b from-black via-zinc-900 to-black">
           <div className="container mx-auto px-4">
             <NutritionPlans />
           </div>
         </section>
 
+        {/* Music Section */}
         <section ref={musicRef} id="music" className="py-16 bg-gradient-to-b from-black via-zinc-900 to-black">
           <div className="container mx-auto px-4">
             <MusicPlayer />
           </div>
         </section>
 
+        {/* Progress Tracker Section */}
         <section ref={progressRef} id="progress" className="py-16 bg-gradient-to-b from-black via-zinc-900 to-black">
           <div className="container mx-auto px-4">
             <ProgressTracker />
           </div>
         </section>
 
+        {/* Tips Section */}
         <section ref={tipsRef} id="tips" className="py-16 bg-gradient-to-b from-black via-zinc-900 to-black">
           <div className="container mx-auto px-4">
             <FitnessTips />
           </div>
         </section>
 
+        {/* Footer */}
         <footer className="bg-zinc-900 border-t border-zinc-800 py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -203,11 +210,9 @@ export default function App() {
               <p className="text-sm text-gray-400">
                 © 2026 GYM ELITE - جميع الحقوق محفوظة
               </p>
-
               <p className="text-xs text-gray-500 mt-2">
                 تحذير: استشر طبيباً قبل البدء بأي برنامج تمارين أو نظام غذائي
               </p>
-
               <div className="flex items-center justify-center gap-2 mt-4">
                 <Flame className="w-4 h-4 text-orange-500" />
                 <p className="text-sm text-orange-400 font-semibold">
@@ -215,25 +220,12 @@ export default function App() {
                 </p>
                 <Flame className="w-4 h-4 text-orange-500" />
               </div>
-
-              {/* Developer Credit (Enhanced) */}
-              <div className="mt-6 text-xs text-gray-500 flex flex-col items-center gap-1">
-                <span className="tracking-wide">
-                  Crafted with ❤️ by
-                </span>
-                <span className="text-sm bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-extrabold">
-                  عمر أشرف
-                </span>
-                <span className="text-[10px] text-gray-600">
-                  Full Stack Developer 💻🔥
-                </span>
-              </div>
             </div>
-
           </div>
         </footer>
       </div>
 
+      {/* Scroll to Top Button */}
       <Button
         onClick={() => scrollToSection('home')}
         className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-orange-600 hover:bg-orange-700 shadow-lg shadow-orange-600/50"
